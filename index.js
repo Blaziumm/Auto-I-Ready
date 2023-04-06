@@ -52,7 +52,6 @@ async function reading(minutes, lessons) {
   //How tf do you put code into dev console (I think it works)
   await page.evaluate(() => {
     var csid = html5Iframe.src.split("?csid=")[1].split("&type")[0];
-    var minutes = 45;
     document.cookie = `csid=${csid}; expires=Thu, 18 Dec 2999 12:00:00 UTC"`;
     document.cookie = `minutes=${minutes}; expires=Thu, 18 Dec 2999 12:00:00 UTC"`;
   });
@@ -148,7 +147,6 @@ async function math(minutes, lessons) {
   //How tf do you put code into dev console (I think it works)
   await page.evaluate(() => {
     var csid = html5Iframe.src.split("?csid=")[1].split("&type")[0];
-    var minutes = 45;
     document.cookie = `csid=${csid}; expires=Thu, 18 Dec 2999 12:00:00 UTC"`;
     document.cookie = `minutes=${minutes}; expires=Thu, 18 Dec 2999 12:00:00 UTC"`;
   });
