@@ -215,5 +215,11 @@ async function math(minutes, lessons) {
 let subject = process.argv[2];
 
 //check if reading or math
-reading()
+if (subject == 'm' || subject == 'math') {
+  math()
+  return;
+} else {
+  reading()
+  return;
+}
 //TODO: lesson skip
